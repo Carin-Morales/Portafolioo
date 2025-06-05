@@ -214,3 +214,33 @@ statusDiv.textContent = "❌ Ocurrió un error. Por favor, intenta nuevamente.";
     }, 4000);
     
 });
+
+// script.js o java.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.getAttribute("data-tab");
+
+      // Quitar "active" de todos los botones
+      tabButtons.forEach(btn => btn.classList.remove("active"));
+
+      // Agregar "active" al botón actual
+      button.classList.add("active");
+
+      // Ocultar todo el contenido
+      tabContents.forEach(content => {
+        content.classList.remove("active");
+      });
+
+      // Mostrar contenido correspondiente
+      const targetContent = document.getElementById(target);
+      if (targetContent) {
+        targetContent.classList.add("active");
+      }
+    });
+  });
+});

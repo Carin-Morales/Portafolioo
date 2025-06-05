@@ -12,29 +12,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+<script src="script.js"></script>
 <body>
 <!-- Header -->
 <header id="header">
-<div class="container">
-<nav>
-  <a href="#" class="logo">
-    <img src="foto/logo1.1.png" alt="">
-   
-  </a>
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">
+        <img src="foto/logo1.1.png" alt="">
+      </a>
 
-<ul class="nav-links">
-<li><a href="#hero" >Inicio</a></li>
-<li><a href="#about" >Acerca de mí</a></li>
-<li><a href="#projects">Proyectos</a></li>
-<li><a href="#contact" >Contacto</a></li>
-</ul>
-<div class="menu-toggle">
-<span></span>
-<span></span>
-<span></span>
-</div>
-</nav>
-</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#about">Acerca de mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
 </header>
 
 <!-- Hero Section -->
@@ -317,11 +318,124 @@ y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma i
 
 
 
+<!-- Sección de de todo -->
+<section id="education-tabs">
+  <div class="container">
+    <div class="section-title">
+      <h2>Formación Académica</h2>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="diplomas">Diplomas</button>
+      <button class="tab-btn" data-tab="certificates">Certificados</button>
+      <button class="tab-btn" data-tab="courses">Cursos</button>
+    </div>
+
+<div class="tab-content active" id="diplomas">
+
+  <!--diplomas -->
+
+<section id="diploma">
+<div class="container">
+<div class="section-title">
+    <h2>Mis Diplomas y reconocimientos</h2>
+</div>
+
+<div class="certificates-grid">
+    <!-- DIPLOMA 1 -->
+    <div class="certificate-card animate-on-scroll">
+        <div class="certificate-image">
+            <img src="foto/Carin.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
+        </div>
+        <div class="certificate-info">
+            <h3>NETWORKING CHALLENGE</h3>
+            <div class="certificate-meta">
+                <span class="certificate-issuer">Univercidad Gerardo Barrios</span>
+                <span class="certificate-date">MAYO 2025</span>
+            </div>
+            
+
+    </div>
+  </div>
+
+      <div class="certificate-card animate-on-scroll">
+        <div class="certificate-image">
+            <img src="foto/tercerlugar.jpeg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
+        </div>
+        <div class="certificate-info">
+            <h3>NETWORKING CHALLENGE</h3>
+            <div class="certificate-meta">
+              
+                <span class="certificate-issuer">Univercidad Gerardo Barrios</span>
+                <span class="certificate-date">MAYO 2025</span>
+            </div>
+            <span class="certificate-issuer">Tercer Lugar</span>
+
+    </div>
+  </div>
+
+      <!-- DIPLOMA 2 -->
+    <div class="certificate-card animate-on-scroll">
+        <div class="certificate-image">
+            <img src="foto/robotica.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
+        </div>
+        <div class="certificate-info">
+            <h3>CARROS SEGUIDORES EN LINEA</h3>
+            <div class="certificate-meta">
+                <span class="certificate-issuer">Univercidad Gerardo Barrios</span>
+                <span class="certificate-date">MAYO 2025</span>
+            </div>
+            
+
+    </div>
+  </div>
+
+   <div class="certificate-card animate-on-scroll">
+        <div class="certificate-image">
+            <img src="foto/carin (1).jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
+        </div>
+        <div class="certificate-info">
+            <h3>Investigacion de Catedra</h3>
+            <div class="certificate-meta">
+                <span class="certificate-issuer">Univercidad Gerardo Barrios</span>
+                <span class="certificate-date">Junio 2024</span>
+            </div>
+            
+
+    </div>
+  </div>
+
+        <!-- DIPLOMA 2 -->
+    <div class="certificate-card animate-on-scroll">
+        <div class="certificate-image">
+            <img src="foto/certificado1.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
+        </div>
+        <div class="certificate-info">
+            <h3>PROGRAMACION</h3>
+            <div class="certificate-meta">
+                <span class="certificate-issuer">Univercidad Gerardo Barrios</span>
+                <span class="certificate-date">JUNIO 2024</span>
+            </div>
+            
+
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+  </div>
+</section>
+</div>
+
 <!-- Sección de Certificados -->
+<div class="tab-content" id="certificates">
 <section id="certificates">
 <div class="container">
 <div class="section-title">
-    <h2>Mis Certificados y Diplomas</h2>
+    <h2>Mis Certificados</h2>
 </div>
 
 <div class="certificates-grid">
@@ -396,6 +510,43 @@ y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma i
   </div>
 </section>
 
+    </div>
+
+  <div class="tab-content" id="courses">
+      <!-- Aquí van tus cursos -->
+
+<!-- seccion de cursos-->
+<section id="courses">
+  <div class="container">
+    <div class="section-title">
+      <h2>Cursos</h2>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-info">
+          <h3>Nombre del Curso</h3>
+          <div class="course-meta">
+            <span>Plataforma</span>
+            <span>Año</span>
+          </div>
+          <p>Breve descripción del curso o lo que aprendiste.</p>
+        </div>
+      </div>
+
+      <!-- Repite según cursos -->
+    </div>
+  </div>
+</section>
+
+
+
+
+      
+    </div>
+  </div>
+</section>
+
 
 
 <!-- seccion contacto-->
@@ -465,6 +616,7 @@ y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma i
     <span id="lang-text">English</span>
   </button>
 </div>
+
 
 
 <div id="image-modal" class="image-modal">
