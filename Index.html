@@ -5,12 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carin Morales | Portafolio</title>
 <link rel="stylesheet" href="style3.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <link rel="icon" href="foto/logo1.1.png" type="image/png">
 
 <script type="application/ld+json">
@@ -29,7 +27,6 @@
   }
 }
 </script>
-
 </head>
 <script src="script.js"></script>
 <body>
@@ -37,15 +34,18 @@
 <header id="header">
   <div class="container">
     <nav>
-      <a href="#" class="logo">
-        <img src="foto/logo1.1.png" alt="">
-      </a>
+      <div class="logo-tagline">
+        <a href="#hero" class="logo">
+          <img src="foto/logo1.1.png" alt="Logo Carin Morales"> 
+        </a>
+      </div>
 
       <ul class="nav-links">
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#about">Acerca de mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#hero" data-translate="Inicio">Inicio</a></li>
+        <li><a href="#about" data-translate="Acerca de mí">Acerca de mí</a></li>
+        <li><a href="#education-tabs" data-translate="Formación">Formación</a></li>
+        <li><a href="#projects" data-translate="Proyectos">Proyectos</a></li>
+        <li><a href="#contact" data-translate="Contacto">Contacto</a></li>
       </ul>
 
       <div class="menu-toggle">
@@ -59,525 +59,546 @@
 
 <!-- Hero Section -->
 <section id="hero">
-<div class="container">
-<div class="hero-content animate-on-scroll">
-<p >Hola, soy</p>
-<h1>Carin Morales</h1>
-<h2 class="typed-text" ></h2>
-<div class="hero-btns">
-<a href="#contact" class="btn" >Contáctame</a>
-<a href="#projects" class="btn btn-accent" >Ver Proyectos</a>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="hero-content animate-on-scroll">
+      <p data-translate="Hola, soy">Hola, soy</p>
+      <h1>Carin Morales</h1>
+      <h2><span> </span><span class="typed-text"></span></h2>
 
+      <div class="hero-btns">
+        <a href="#contact" class="boton-inicio">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="btn-text" data-translate="Contactame">Contactame</span>
+        </a>
+
+        <a href="#projects" class="boton-inicio boton-inicio-accent">
+          <i class="fa-solid fa-folder-open"></i>
+          <span class="btn-text" data-translate="Ver Proyecto">Ver Proyecto</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- seccion acerca de mi -->
 <section id="about">
-<div class="container">
-<div class="section-title">
-<h2 >Acerca de mí</h2>
+  <div class="container">
+    <div class="section-title">
+      <h2 data-translate="Acerca de mí">Acerca de mí</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-image animate-on-scroll">
+        <img src="foto/perfil2.png" alt="Carin Morales">
+      </div>
+      <div class="about-text animate-on-scroll">
+        <p data-translate="Soy Carin, estudiante con interés en el Diseño UX/UI y Desarrollo Front-end. Me apasiona la forma en que la creatividad y la funcionalidad se combinan para crear experiencias únicas y memorables para los usuarios.">
+          Soy Carin, estudiante con interés en el Diseño UX/UI y Desarrollo Front-end. Me apasiona la forma en que la creatividad y la funcionalidad se combinan para crear experiencias únicas y memorables para los usuarios.
+        </p>
+        <p data-translate="Mi enfoque se centra en diseñar interfaces intuitivas y atractivas, combinando principios de diseño con las mejores prácticas de desarrollo web. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.">
+          Mi enfoque se centra en diseñar interfaces intuitivas y atractivas, combinando principios de diseño con las mejores prácticas de desarrollo web. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.
+        </p>
+
+
+<div class="cv-download" id="cvDownload">
+  <button id="toggleCvBtn" class="btn1">
+    Descargar CV <i class="fas fa-caret-down"></i>
+  </button>
+  <div id="cvOptions" class="cv-buttons">
+    <a href="pdf/CV_español.pdf" class="btn1" download>
+       <i class="fas fa-download"></i> <span data-translate="CV en Español">CV Español</span>
+    </a>
+    <a href="pdf/CV_English.pdf" class="btn1" download>
+       <i class="fas fa-download"></i> <span data-translate="CV en Inglés">CV Inglés</span>
+    </a>
+  </div>
 </div>
-<div class="about-content">
-<div class="about-image animate-on-scroll">
-<img src="foto/carin1.png" alt="Carin Morales">
-</div>
-<div class="about-text animate-on-scroll">
 
-<p >
-Soy Carin, estudiante con interés en el Diseño UX/UI y Desarrollo Front-end. Me apasiona la forma en que la creatividad y la funcionalidad se combinan para crear experiencias únicas y memorables para los usuarios.
-</p>
-<p >
-Mi enfoque se centra en diseñar interfaces intuitivas y atractivas, combinando principios de diseño con las mejores prácticas de desarrollo web. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.                    </p>
-<a href="pdf/CV.pdf" class="btn mt-4" download >
-  <i class="fas fa-download"></i> Descargar CV
-</a>
 
-<div class="skills">
-<h3 >Habilidades</h3>
+        <div class="skills">
+          <h3 data-translate="Habilidades">Habilidades</h3>
 
-<!-- Habilidad: Figma -->
+          <!-- Habilidad: Figma -->
+          <div class="skill-item animate-on-scroll">
+            <div class="skill-info">
+              <i class="fa-brands fa-figma skill-icon" style="color:#F24E1E;"></i>
+              <span>Figma</span>
+              <span></span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- Habilidad: HTML/CSS -->
+          <div class="skill-item animate-on-scroll">
+            <div class="skill-info">
+              <i class="fa-brands fa-html5 skill-icon" style="color:#E34F26;"></i>
+              <span>HTML</span>
+              <span></span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <!-- Habilidad: CSS -->
+          <div class="skill-item animate-on-scroll">
+            <div class="skill-info">
+              <i class="fa-brands fa-css3-alt skill-icon" style="color:#1572B6;"></i>
+              <span>CSS</span>
+              <span></span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <!-- Habilidad: JavaScript -->
+          <div class="skill-item animate-on-scroll">
+            <div class="skill-info">
+              <i class="fa-brands fa-js-square skill-icon" style="color:#F7DF1E;"></i>
+              <span>JavaScript</span>
+              <span></span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 35%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Wordpress -->
 <div class="skill-item animate-on-scroll">
 <div class="skill-info">
-<i class="fa-brands fa-figma skill-icon" style="color:#F24E1E;"></i>
-<span>Figma</span>
-<span>80%</span>
+<i class="fa-brands fa-wordpress skill-icon" style="color:#21759B;"></i>
+<span>Wordpress</span>
+<span></span>
 </div>
 <div class="skill-bar">
-<div class="skill-progress" style="width: 80%;"></div>
-</div>
-</div>
-
-<!-- Habilidad: HTML/CSS -->
-<div class="skill-item animate-on-scroll">
-<div class="skill-info">
-<i class="fa-brands fa-html5 skill-icon" style="color:#E34F26;"></i>
-
-<span>HTML</span>
-<span>75%</span>
-</div>
-<div class="skill-bar">
-<div class="skill-progress" style="width: 75%;"></div>
-</div>
-</div>
-
-<!-- Habilidad: JavaScript -->
-<div class="skill-item animate-on-scroll">
-<div class="skill-info">
-<i class="fa-brands fa-js-square skill-icon" style="color:#F7DF1E;"></i>
-<span>JavaScript</span>
-<span>35%</span>
-</div>
-<div class="skill-bar">
-<div class="skill-progress" style="width: 35%;"></div>
-</div>
-</div>
-
-<!-- Habilidad: CSS -->
-<div class="skill-item animate-on-scroll">
-<div class="skill-info">
-<i class="fa-brands fa-css3-alt skill-icon" style="color:#1572B6;"></i>
-<span>CSS</span>
-<span>70%</span>
-</div>
-<div class="skill-bar">
-<div class="skill-progress" style="width: 70%;"></div>
-</div>
+<div class="skill-progress" style="width: 30%;"></div>
 </div>
 </div>
 
 
-</div>
-</div>
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects">
-<div class="container">
-<div class="section-title">
-<h2 >Mis Proyectos</h2>
-</div>
-<div class="projects-grid">
-
-<!-- proyecto1  -->
-<div class="project-card animate-on-scroll">
-<div class="project-image-slider">
-
-<div class="slider-container">
-<div class="slider-track">
-<div class="slide">
-<img src="foto/shulton1.png" alt="Shulton Parking - Vista 1" class="zoomable-img">
-</div>
-<div class="slide">
-<img src="foto/shulton2.png" alt="Shulton Parking - Vista 2" class="zoomable-img">
-
-</div>
-</div>
-
-<!-- Controles del carrusel -->
-<button class="slider-btn prev-btn" aria-label="Anterior imagen">
-<i class="fas fa-chevron-left"></i>
-</button>
-<button class="slider-btn next-btn" aria-label="Siguiente imagen">
-<i class="fas fa-chevron-right"></i>
-</button>
-<!-- Indicadores -->
-<div class="slider-indicators"></div>
-</div>
-</div>
-
-<div class="project-info">
-<h3>Shulton Parking</h3>
-<div class="project-tags">
-
-<span class="project-tag type-tag" >Proyecto Académico</span>
-<span class="project-tag role-tag" >Diseñador y desarrollador front-end</span>
-
-<p >Una plataforma web que permite visualizar todos los estacionamientos disponibles en el municipio de Usulután, junto con información detallada y su ubicación geográfica.</p>
-
-<!-- Tecnologías   -->
-<span class="project-tag tech-tag">HTML/CSS</span>
-<span class="project-tag tech-tag">JavaScript</span>
-<span class="project-tag tech-tag">API Maps</span>
-<span class="project-tag tech-tag">Responsive</span>
-<span class="project-tag tech-tag">PHP</span>
-<span class="project-tag tech-tag">MySQL</span>
-<span class="project-tag tech-tag">Bootstrap</span>
-</div>
-
-<div  class="project-links">
-<a href="https://github.com/EmerLopez/shulton_parking"  target="_blank" class="btn btn-sm" >
-<i class="fab fa-github"></i> Ver Proyecto
-</a>
-</div>
-
-</div>
-</div>
-
-
-<!-- proyecto2  -->
-<div class="project-card animate-on-scroll">
-<div class="project-image-slider">
-
-<div class="slider-container">
-<div class="slider-track">
-<div class="slide">
-<img src="foto/snaker.jpg" alt="Shulton Parking - Vista 1" class="zoomable-img">
-</div>
-<div class="slide">
-<img src="foto/snaker6.jpg" alt="Shulton Parking - Vista 2" class="zoomable-img">
-
-</div>
-</div>
-
-
-<button class="slider-btn prev-btn" aria-label="Anterior imagen">
-<i class="fas fa-chevron-left"></i>
-</button>
-<button class="slider-btn next-btn" aria-label="Siguiente imagen">
-<i class="fas fa-chevron-right"></i>
-</button>
-
-<div class="slider-indicators"></div>
-</div>
-</div>
-
-<div class="project-info">
-<h3>Archery Sneakers</h3>
-<div class="project-tags">
-
-<span class="project-tag type-tag" >Proyecto Académico</span>
-<span class="project-tag role-tag" >Desarrollador front-end y backend </span>
-
-<p >Aplicación móvil está diseñada para facilitar la administración eficiente de inventarios
-y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma intuitiva y fácil de usar.</p>
-
-
-<span class="project-tag tech-tag">Android studio</span>
-<span class="project-tag tech-tag">Java</span>
-<span class="project-tag tech-tag">SQLite</span>
-<span class="project-tag tech-tag">Kotlin</span>
-<span class="project-tag tech-tag">XML Layouts</span>
-
-</div>
-
-<div class="project-links">
-<a  href="https://github.com/Carin-Morales/Proyecto_final_Equipo9" target="_blank" class="btn btn-sm">
-<i class="fab fa-github"></i> Ver Proyecto
-</a>
-</div>
-
-</div>
-</div>
-
-
-<!-- proyecto3  -->
-
-<div class="project-card animate-on-scroll">
-<div class="project-image-slider">
-
-<div class="slider-container">
-<div class="slider-track">
-<div class="slide">
-<img src="foto/1.1.jpeg" alt="Shulton Parking - Vista 1" class="zoomable-img">
-</div>
-<div class="slide">
-<img src="foto/1.2.jpeg" alt="Shulton Parking - Vista 2" class="zoomable-img">
-
-</div>
-</div>
-
-
-<button class="slider-btn prev-btn" aria-label="Anterior imagen">
-<i class="fas fa-chevron-left"></i>
-</button>
-<button class="slider-btn next-btn" aria-label="Siguiente imagen">
-<i class="fas fa-chevron-right"></i>
-</button>
-
-<div class="slider-indicators"></div>
-</div>
-</div>
-
-<div class="project-info">
-<h3>Scandalo Boutique</h3>
-<div class="project-tags">
-
-<span class="project-tag type-tag" >Proyecto Académico</span>
-
-<span class="project-tag role-tag" >Desarrollador front-end</span>
-
-<p >Plataforma web para la gestión de asistencia de empleados. La plataforma permitía a los empleados registrarse con su usuario y contraseña para marcar su hora de entrada y salida</p>
-
-
-<span class="project-tag tech-tag">HTML/CSS</span>
-<span class="project-tag tech-tag">Python</span>
-<span class="project-tag tech-tag">MySQL</span>
-<span class="project-tag tech-tag">Responsive</span>
-<span class="project-tag tech-tag">Bootstrap</span>
-
-</div>
-
-<div class="project-links">
-<a  href="https://github.com/Fernando-Jse/Proyecto" target="_blank" class="btn btn-sm">
-<i class="fab fa-github"></i> Ver Proyecto
-
-</a>
-</div>
-
-</div>
-</div>
-
-
-</div>
-</div>
-</section>
-
-
-
-<!-- Sección de de todo -->
+<!-- Sección academica  -->
 <section id="education-tabs">
   <div class="container">
     <div class="section-title">
-      <h2>Formación Académica</h2>
+      <h2 data-translate="Formación Académica">Formación Académica</h2>
     </div>
 
     <div class="tabs">
-      <button class="tab-btn active" data-tab="diplomas">Diplomas</button>
-      <button class="tab-btn" data-tab="certificates">Certificados</button>
-      <button class="tab-btn" data-tab="courses">Cursos</button>
+      <button class="tab-btn active" data-tab="diplomas" data-translate="Diplomas">Diplomas</button>
+      <button class="tab-btn" data-tab="certificates" data-translate="Certificados">Certificados</button>
+      <button class="tab-btn" data-tab="courses" data-translate="Testimonios">Testimonios</button>
     </div>
 
-<div class="tab-content active" id="diplomas">
+    <div class="tab-content active" id="diplomas">
+      <section id="diploma">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-translate="Mis Diplomas y reconocimientos">Mis Diplomas y reconocimientos</h2>
+          </div>
 
-  <!--diplomas -->
-
-<section id="diploma">
-<div class="container">
-<div class="section-title">
-    <h2>Mis Diplomas y reconocimientos</h2>
-</div>
-
-<div class="certificates-grid">
-    <!-- DIPLOMA 1 -->
-    <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/Carin.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>NETWORKING CHALLENGE</h3>
-            <div class="certificate-meta">
-                <span class="certificate-issuer">Universidad Gerardo Barrios</span>
-                <span class="certificate-date">MAYO 2025</span>
+          <div class="certificates-grid">
+            <!-- DIPLOMA 1 -->
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/Carin.jpg" alt="diploma de redes" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3>NETWORKING CHALLENGE</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Universidad Gerardo Barrios</span>
+                  <span class="certificate-date">MAYO 2025</span>
+                </div>
+              </div>
             </div>
-            
 
-    </div>
-  </div>
-
-      <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/tercerlugar.jpeg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>NETWORKING CHALLENGE</h3>
-            <div class="certificate-meta">
-              
-                <span class="certificate-issuer">Universidad Gerardo Barrios</span>
-                <span class="certificate-date">MAYO 2025</span>
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/tercerlugar.jpeg" alt="diploma de tercer lugar" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3>NETWORKING CHALLENGE</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Universidad Gerardo Barrios</span>
+                  <span class="certificate-date">MAYO 2025</span>
+                </div>
+                <span class="certificate-issuer" data-translate="Tercer Lugar">Tercer Lugar</span>
+              </div>
             </div>
-            <span class="certificate-issuer">Tercer Lugar</span>
 
-    </div>
-  </div>
-
-      <!-- DIPLOMA 2 -->
-    <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/robotica.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>CARROS SEGUIDORES EN LINEA</h3>
-            <div class="certificate-meta">
-                <span class="certificate-issuer">Universidad Gerardo Barrios</span>
-                <span class="certificate-date">MAYO 2025</span>
+            <!-- DIPLOMA 2 -->
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/robotica.jpg" alt="diploma de primer lugar" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3>CARROS SEGUIDORES EN LINEA</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Universidad Gerardo Barrios</span>
+                  <span class="certificate-date">MAYO 2025</span>
+                </div>
+              </div>
             </div>
-            
 
-    </div>
-  </div>
-
-   <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/carin (1).jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>Investigacion de Catedra</h3>
-            <div class="certificate-meta">
-                <span class="certificate-issuer">Universidad Gerardo Barrios</span>
-                <span class="certificate-date">Junio 2024</span>
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/carin (1).jpg" alt="diploma de catedra" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3 data-translate="Investigacion de Catedra">Investigacion de Catedra</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Universidad Gerardo Barrios</span>
+                  <span class="certificate-date">Junio 2024</span>
+                </div>
+              </div>
             </div>
-            
-
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
 
+    <!-- Sección de Certificados -->
+    <div class="tab-content" id="certificates">
+      <section id="certificates">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-translate="Mis Certificados">Mis Certificados</h2>
+          </div>
 
+          <div class="certificates-grid">
+            <!-- Certificado 1 -->
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/certificado1.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3 data-translate="Diseño Web Profesional: Curso Completo, Práctico y desde 0">Diseño Web Profesional: Curso Completo, Práctico y desde 0</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Udemy</span>
+                  <span class="certificate-date">Abril 2025</span>
+                </div>
+                <p data-translate="Certificado en principios de diseño web e interfaces.">Certificado en principios de diseño web e interfaces.</p>
 
+                <div class="center-button">
+                  <a href="https://www.udemy.com/certificate/UC-365b7633-0238-4cdd-90e5-be37ccf3ec5d/"
+                     class="btn btn-sm" target="_blank">
+                    <i class="fas fa-certificate"></i> <span data-translate="Ver Credencial">Ver Credencial</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            <!-- Certificado 2 -->
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/certificado2.png" alt="Certificado en Desarrollo Frontend" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3 data-translate="Fundamentos del Diseño Grafico">Fundamentos del Diseño Grafico</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Canvas</span>
+                  <span class="certificate-date">Abril 2025</span>
+                </div>
+                <p data-translate="Certificación en fundamentos del diseño, incluyendo elementos, principios, tipografía, teoría del color.">
+                  Certificación en fundamentos del diseño, incluyendo elementos, principios, tipografía, teoría del color.
+                </p>
+                <div class="center-button">
+                  <a href="https://canva.com/designschool/certification-award/1f6aa850-82de-4e57-af2c-392cf1c14407"
+                     class="btn btn-sm" target="_blank">
+                    <i class="fas fa-certificate"></i> <span data-translate="Ver Credencial">Ver Credencial</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificado 3 -->
+            <div class="certificate-card animate-on-scroll">
+              <div class="certificate-image">
+                <img src="foto/productividad.png" alt="Certificado Productividad Personal" class="zoomable-img">
+              </div>
+              <div class="certificate-info">
+                <h3 data-translate="Productividad Personal">Productividad Personal</h3>
+                <div class="certificate-meta">
+                  <span class="certificate-issuer">Google Actívate</span>
+                  <span class="certificate-date">Mayo 2025</span>
+                </div>
+                <p data-translate="Certificado para gestionar eficazmente el tiempo y recursos con el fin de alcanzar los objetivos y metas individuales.">
+                  Certificado para gestionar eficazmente el tiempo y recursos con el fin de alcanzar los objetivos y metas individuales.
+                </p>
+                <div class="center-button">
+                  <a href="https://skillshop.exceedlms.com/student/award/EX4EfUqjAzjw29JKFZTSeAwP" 
+                     class="btn btn-sm" target="_blank">
+                    <i class="fas fa-certificate"></i> <span data-translate="Ver Credencial">Ver Credencial</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-content" id="courses">
+      <!-- Sección de Testimonios -->
+      <section id="testimonios">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-translate="Testimonio">Testimonio</h2>
+          </div>
+
+          <div class="testimonial-letters">
+            <!-- Testimonio 1 -->
+            <div class="letter-card">
+              <div class="letter-info">
+                <h4>Lic. Máster. Oscar Roberto Torres</h4>
+                <span data-translate="DocenteUniversidad Gerardo Barrios">Docente<br>Universidad Gerardo Barrios</span>
+              </div>
+              <div class="letter-image">
+                <img src="foto/testimonio4.jpg" alt="Carta de testimonio 1">
+              </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="letter-card">
+              <div class="letter-info">
+                <h4>Ing. Ms. Alcir Gustavo Quintanilla</h4>
+                <span data-translate="Docente Universidad Gerardo Barrios">Docente <br>Universidad Gerardo Barrios</span>
+              </div>
+              <div class="letter-image">
+                <img src="foto/testimonio2.jpg" alt="Carta de testimonio 2">
+              </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="letter-card">
+              <div class="letter-info">
+                <h4>Lic. Ms. Herbert René Cordero</h4>
+                <span data-translate="Docente Universidad Gerardo Barrios">Docente<br>Universidad Gerardo Barrios</span>
+              </div>
+              <div class="letter-image">
+                <img src="foto/testimonio1.jpg" alt="Carta de testimonio 3">
+              </div>
+            </div>
+
+            <!-- Testimonio 4 -->
+            <div class="letter-card">
+              <div class="letter-info">
+                <h4>Ing. Marvin Osmaro Parada Benítez</h4>
+                <span data-translate="Docente Universidad Gerardo Barrios">Docente <br>Universidad Gerardo Barrios</span>
+              </div>
+              <div class="letter-image">
+                <img src="foto/testimonio3.jpg" alt="Carta de testimonio 4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal para ampliar imagen -->
+      <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
     </div>
   </div>
 </section>
-</div>
 
-<!-- Sección de Certificados -->
-<div class="tab-content" id="certificates">
-<section id="certificates">
-<div class="container">
-<div class="section-title">
-    <h2>Mis Certificados</h2>
-</div>
-
-<div class="certificates-grid">
-    <!-- Certificado 1 -->
-    <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/certificado1.jpg" alt="Certificado en Diseño UX/UI" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>Diseño Web Profesional: Curso Completo, Práctico y desde 0</h3>
-            <div class="certificate-meta">
-                <span class="certificate-issuer">Udemy</span>
-                <span class="certificate-date">Abril 2025</span>
-            </div>
-            <p>Certificado en principios de diseño web e interfaces.</p>
-
-            <div class="center-button">
-            <a href="https://www.udemy.com/certificate/UC-365b7633-0238-4cdd-90e5-be37ccf3ec5d/"
-            class="btn btn-sm" target="_blank">
-            <i class="fas fa-certificate"></i> Ver Credencial
-          </a>
-        </div>
-
-    </div>
-  </div>
-
-    <!-- Certificado 2 -->
-    <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/certificado2.png" alt="Certificado en Desarrollo Frontend" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>Fundamentos del Diseño Grafico</h3>
-            <div class="certificate-meta">
-                <span class="certificate-issuer">Canvas</span>
-                <span class="certificate-date">Abril 2025</span>
-            </div>
-            <p>Certificación en fundamentos del diseño, incluyendo elementos, principios, tipografía, teoría del color.</p>
-            <div class="center-button">
-            <a href="https://canva.com/designschool/certification-award/1f6aa850-82de-4e57-af2c-392cf1c14407"
-            class="btn btn-sm" target="_blank">
-            <i class="fas fa-certificate"></i> Ver Credencial
-          </a>
-        </div>
-    </div>
-  </div>
-
-    <!-- Certificado 3 -->
-    <div class="certificate-card animate-on-scroll">
-        <div class="certificate-image">
-            <img src="foto/productividad.png" alt="Productividad Personal" class="zoomable-img">
-        </div>
-        <div class="certificate-info">
-            <h3>Productividad Personal</h3>
-            <div class="certificate-meta">
-                <span class="certificate-issuer">Google Actívate</span>
-                <span class="certificate-date">Mayo 2025</span>
-            </div>
-            <p>Certificado para gestionar eficazmente el tiempo y recursos con el fin de alcanzar los objetivos y metas individuales.</p>
-            <div class="center-button">
-            <a href="https://skillshop.exceedlms.com/student/award/EX4EfUqjAzjw29JKFZTSeAwP" 
-            class="btn btn-sm" target="_blank">
-            <i class="fas fa-certificate"></i> Ver Credencial
-          </a>
-        </div>
-    </div>
-    </div>
-
-    
-  
-</div>
-  </div>
-</section>
-
-    </div>
-
-  <div class="tab-content" id="courses">
-      <!-- Aquí van tus cursos -->
-
-<!-- seccion de cursos-->
-<section id="courses">
+<!-- Projectos seccion-->
+<section id="projects">
   <div class="container">
     <div class="section-title">
-      <h2>Cursos</h2>
+      <h2 data-translate="Mis Proyectos">Mis Proyectos</h2>
     </div>
+    <div class="projects-grid">
 
-    <div class="courses-grid">
-      <div class="course-card">
-        <div class="course-info">
-          <h3>Curso</h3>
-          <div class="course-meta">
-            <span>donde</span>
-            <span>Año</span>
+      <!-- proyecto1  -->
+      <div class="project-card animate-on-scroll">
+        <div class="project-image-slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slide">
+                <img src="foto/shulton1.png" alt="Shulton Parking - Vista 1" class="zoomable-img">
+              </div>
+              <div class="slide">
+                <img src="foto/shulton2.png" alt="Shulton Parking - Vista 2" class="zoomable-img">
+              </div>
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="slider-btn prev-btn" aria-label="Anterior imagen">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn" aria-label="Siguiente imagen">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- Indicadores -->
+            <div class="slider-indicators"></div>
           </div>
-          <p>...</p>
+        </div>
+
+        <div class="project-info">
+          <h3>Shulton Parking</h3>
+          <div class="project-tags">
+            <span class="project-tag type-tag" data-translate="Proyecto Académico">Proyecto Académico</span>
+            <span class="project-tag role-tag" data-translate="Diseñador y desarrollador front-end">Diseñador y desarrollador front-end</span>
+
+            <p data-translate="Una plataforma web que permite visualizar todos los estacionamientos disponibles en el municipio de Usulután, junto con información detallada y su ubicación geográfica.">
+              Una plataforma web que permite visualizar todos los estacionamientos disponibles en el municipio de Usulután, junto con información detallada y su ubicación geográfica.
+            </p>
+
+            <!-- Tecnologías   -->
+            <span class="project-tag tech-tag">HTML/CSS</span>
+            <span class="project-tag tech-tag">JavaScript</span>
+            <span class="project-tag tech-tag">API Maps</span>
+            <span class="project-tag tech-tag">Responsive</span>
+            <span class="project-tag tech-tag">PHP</span>
+            <span class="project-tag tech-tag">MySQL</span>
+            <span class="project-tag tech-tag">Bootstrap</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/EmerLopez/shulton_parking" target="_blank" class="btn btn-sm">
+              <i class="fab fa-github"></i> <span data-translate="Ver Proyecto">Ver Proyecto</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Repite según cursos -->
+      <!-- proyecto2  -->
+      <div class="project-card animate-on-scroll">
+        <div class="project-image-slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slide">
+                <img src="foto/snaker.jpg" alt="Shulton Parking - Vista 1" class="zoomable-img">
+              </div>
+              <div class="slide">
+                <img src="foto/snaker6.jpg" alt="Shulton Parking - Vista 2" class="zoomable-img">
+              </div>
+            </div>
+
+            <button class="slider-btn prev-btn" aria-label="Anterior imagen">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn" aria-label="Siguiente imagen">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="slider-indicators"></div>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3>Archery Sneakers</h3>
+          <div class="project-tags">
+            <span class="project-tag type-tag" data-translate="Proyecto Académico">Proyecto Académico</span>
+            <span class="project-tag role-tag" data-translate="Desarrollador front-end y backend">Desarrollador front-end y backend</span>
+
+            <p data-translate="Aplicación móvil está diseñada para facilitar la administración eficiente de inventarios y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma intuitiva y fácil de usar.">
+              Aplicación móvil está diseñada para facilitar la administración eficiente de inventarios y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma intuitiva y fácil de usar.
+            </p>
+
+            <span class="project-tag tech-tag">Android studio</span>
+            <span class="project-tag tech-tag">Java</span>
+            <span class="project-tag tech-tag">SQLite</span>
+            <span class="project-tag tech-tag">Kotlin</span>
+            <span class="project-tag tech-tag">XML Layouts</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Carin-Morales/Proyecto_final_Equipo9" target="_blank" class="btn btn-sm">
+              <i class="fab fa-github"></i> <span data-translate="Ver Proyecto">Ver Proyecto</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- proyecto3  -->
+      <div class="project-card animate-on-scroll">
+        <div class="project-image-slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slide">
+                <img src="foto/1.1.jpeg" alt="Shulton Parking - Vista 1" class="zoomable-img">
+              </div>
+              <div class="slide">
+                <img src="foto/1.2.jpeg" alt="Shulton Parking - Vista 2" class="zoomable-img">
+              </div>
+            </div>
+
+            <button class="slider-btn prev-btn" aria-label="Anterior imagen">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn" aria-label="Siguiente imagen">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="slider-indicators"></div>
+          </div>
+        </div>
+
+        <div class="project-info">
+          <h3>Scandalo Boutique</h3>
+          <div class="project-tags">
+            <span class="project-tag type-tag" data-translate="Proyecto Académico">Proyecto Académico</span>
+            <span class="project-tag role-tag" data-translate="Desarrollador front-end">Desarrollador front-end</span>
+
+            <p data-translate="Plataforma web para la gestión de asistencia de empleados. La plataforma permitía a los empleados registrarse con su usuario y contraseña para marcar su hora de entrada y salida">
+              Plataforma web para la gestión de asistencia de empleados. La plataforma permitía a los empleados registrarse con su usuario y contraseña para marcar su hora de entrada y salida
+            </p>
+
+            <span class="project-tag tech-tag">HTML/CSS</span>
+            <span class="project-tag tech-tag">Python</span>
+            <span class="project-tag tech-tag">MySQL</span>
+            <span class="project-tag tech-tag">Responsive</span>
+            <span class="project-tag tech-tag">Bootstrap</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/Fernando-Jse/Proyecto" target="_blank" class="btn btn-sm">
+              <i class="fab fa-github"></i> <span data-translate="Ver Proyecto">Ver Proyecto</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-
-
-
-      
-    </div>
-  </div>
-</section>
-
-
 
 <!-- seccion contacto-->
 <section id="contact">
   <div class="container">
     <div class="section-title">
-      <h2>Contacto</h2>
+      <h2 data-translate="Contacto">Contacto</h2>
     </div>
     <div class="contact-content animate-on-scroll">
-      <p>
-       ¿Tiene alguna pregunta? No dude en contactarme. Será un placer ayudarle.
+      <p data-translate="¿Tiene alguna pregunta? No dude en contactarme. Será un placer ayudarle.">
+        ¿Tiene alguna pregunta? No dude en contactarme. Será un placer ayudarle.
       </p>
 
       <!-- FORMULARIO -->
       <form class="contact-form" id="contactForm">
         <div class="form-group animate-on-scroll">
-          <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+          <input type="text" name="name" class="form-control" placeholder="Nombre" data-translate-placeholder="Nombre" required>
         </div>
         <div class="form-group animate-on-scroll">
-          <input type="email" name="email" class="form-control" placeholder="Email" required>
+          <input type="email" name="email" class="form-control" placeholder="Email" data-translate-placeholder="Email" required>
         </div>
         <div class="form-group full-width animate-on-scroll">
-          <input type="text" name="subject" class="form-control" placeholder="Asunto" required>
+          <input type="text" name="subject" class="form-control" placeholder="Asunto" data-translate-placeholder="Asunto" required>
         </div>
         <div class="form-group full-width animate-on-scroll">
-          <textarea name="message" class="form-control" placeholder="Mensaje" required></textarea>
+          <textarea name="message" class="form-control" placeholder="Mensaje" data-translate-placeholder="Mensaje" required></textarea>
         </div>
         <div class="form-group full-width submit-btn animate-on-scroll">
-          <button type="submit" class="btn btn-accent">Enviar</button>
+          <button type="submit" class="btn btn-accent" data-translate="Enviar">Enviar</button>
         </div>
       </form>
 
@@ -599,31 +620,26 @@ y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma i
 
 <!-- pie de pagina -->
 <footer>
-<div class="container">
-<div class="footer-content">
-<p >Formandome Hoy Para Diseñar el Mañana.</p>
-<p >© 2025 Carin Morales. Todos los derechos reservados.</p>
-
-</div>
-</div>
+  <div class="container">
+    <div class="footer-content">
+      <p class="tagline" data-translate="Formandome Hoy Para Diseñar el Mañana.">Formandome Hoy Para Diseñar el Mañana.</p>
+      <p data-translate="© 2025 Carin Morales. Todos los derechos reservados.">© 2025 Carin Morales. Todos los derechos reservados.</p>
+    </div>
+  </div>
 </footer>
-
 
 <a href="#hero" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-
 <div class="lang-toggle">
-  <button id="lang-toggle" class="lang-btn" onclick="window.location.href='index1.1.html';">
+  <button id="lang-toggle" class="lang-btn">
     <span id="lang-flag">🇬🇧</span>
-    <span id="lang-text">English</span>
+    <span id="lang-text" data-translate="English">English</span>
   </button>
 </div>
 
-
-
 <div id="image-modal" class="image-modal">
-<span class="close-modal">&times;</span>
-<img class="modal-content" id="modal-img">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modal-img">
 </div>
 
 <!-- JavaScript -->
@@ -632,7 +648,9 @@ y la gestión de ventas de zapatos deportivos de marca, todo en una plataforma i
 
 <script>
 
-</script>
+
+  </script>
+
 
 </body>
 </html>
