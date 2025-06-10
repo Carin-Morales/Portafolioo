@@ -344,6 +344,7 @@ const translations = {
   // Testimonials
   "Docente Universidad Gerardo Barrios": "Professor Gerardo Barrios University",
   "Docente Universidad Gerardo Barrios": "Professor Gerardo Barrios University",
+   "Docente ": "Professor",
   
   // Footer
   "CV en Español": "CV in Spanish",
